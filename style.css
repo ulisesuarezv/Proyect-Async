@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --rtc-color-1: #2E3532;
+    --rtc-color-2: #A0AAB2;
+    --rtc-color-3: #F4FFF8;
+    --rtc-color-4: #FFFFF2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    background-color: var(--rtc-color-4);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 5rem;
+}
+
+.divHeader {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    padding-top: 3rem;
+}
+
+#app {
+    width: 95%;
+    /* height: 80%; */
+    margin: 100px auto 50px;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+#app > a > img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+@media (max-width: 1080px) {
+    #app {
+        margin: 50px auto; /* Cambiar el margen en dispositivos más pequeños */
+        grid-gap: 10px; /* Ajustar el espacio entre las celdas */
+    }
+
+    #head {
+        height: auto;
+    }
+
+    .divHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        padding-top: 1rem;
+    }
+
+    .divHeader > .icon > img {
+        display: none;
+    }
+
+    .submit {
+        padding: 1rem;
+    }
+}

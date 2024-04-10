@@ -1,0 +1,14 @@
+.divHeader > form > input {
+    display: flex;
+    width: 40em;
+    height: 1.85rem;
+    border-radius: 0.50rem;
+    overflow: hidden;
+    outline: none;
+    border: 1.2px solid;
+    background-color: var(--rtc-color-3);
+}
+
+input[type="text"] {
+    padding: 1rem;
+}

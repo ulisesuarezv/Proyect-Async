@@ -1,0 +1,21 @@
+.lista {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+}
+
+.lista > ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.lista > ul > li {
+    list-style: none;
+    cursor: pointer;
+    background-color: var(--rtc-color-1);
+    border-radius: 1rem;
+    color: white;
+    font-size: 15px;
+    font-weight: 200;
+    padding: 0.50rem;
+}
